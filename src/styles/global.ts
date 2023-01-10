@@ -7,12 +7,23 @@ export default createGlobalStyle`
     box-sizing: border-box;
     outline: 0;
     border: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   body {
     background: ${({ theme }) => theme.background};
-    color: ${({ theme }) => theme.text};
     -webkit-font-smoothing: antialiased;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
   }
 `

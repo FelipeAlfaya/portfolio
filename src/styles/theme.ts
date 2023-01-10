@@ -1,11 +1,11 @@
 const theme = {
-  background: '#022B3A',
-  text: '#E1E5F2',
+  background: '#131515',
+  text: '#FFFAFB',
   textDark: '#848DA0',
-  textLight: '#fff',
-  primary: '#6320EE',
-  secondary: '#1F7A8C',
-  tertiary: '#BFDBF7',
+  primary: '#339989',
+  secondary: '#7DE2D1',
+  tertiary: '#2B2C28',
+  header: 'rgba(32, 34, 34, 0.7)',
   error: '#d45d5d',
 }
 

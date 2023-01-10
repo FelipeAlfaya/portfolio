@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        (<Component {...pageProps} />)
+        <Component {...pageProps} />
       </ThemeProvider>
     </>
   )
