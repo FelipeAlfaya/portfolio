@@ -1,4 +1,7 @@
+//Styles
 import * as H from '../styles/homestyles'
+
+//Components
 import Header from '../components/Header'
 import { HomeHero } from '../components/HomeHero'
 

@@ -16,6 +16,5 @@ export const HomeContainer = styled.div`
 
   > body {
     background: ${({ theme }) => theme.background};
-    height: 180vh;
   }
 `

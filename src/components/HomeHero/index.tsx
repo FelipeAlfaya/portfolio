@@ -1,8 +1,16 @@
+//images
 import art from '../../assets/PixelArt 2.svg'
+
+//library
 import Image from 'next/image'
 import Typewriter from 'typewriter-effect'
+import { SlSocialInstagram } from 'react-icons/sl'
+import { SiGithub } from 'react-icons/si'
+import { FaLinkedin } from 'react-icons/fa'
 
+//styles
 import * as C from './styles'
+import Link from 'next/link'
 
 export function HomeHero() {
   return (
@@ -22,6 +30,26 @@ export function HomeHero() {
               }}
             />
           </h3>
+          <C.SocialContainer>
+            <C.Social>
+              <a href='https://www.instagram.com/alfaaya/' target='_blank'>
+                <SlSocialInstagram width={100} height={100} color={'#fff'} />
+              </a>
+            </C.Social>
+            <C.Social>
+              <a
+                href='https://www.linkedin.com/in/felipealfaya/'
+                target='_blank'
+              >
+                <FaLinkedin width={100} height={100} color={'#fff'} />
+              </a>
+            </C.Social>
+            <C.Social>
+              <a href='https://github.com/FelipeAlfaya' target='_blank'>
+                <SiGithub width={100} height={100} color={'#fff'} />
+              </a>
+            </C.Social>
+          </C.SocialContainer>
         </C.TextContainer>
       </div>
       <Image

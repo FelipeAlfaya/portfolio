@@ -1,4 +1,4 @@
-import { lighten } from 'polished'
+import { lighten, opacify } from 'polished'
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -18,6 +18,39 @@ export const Container = styled.div`
   > div {
     flex: 4;
   }
+
+  @media (max-width: 1450px) {
+    > img {
+      width: 30rem;
+      height: 30rem;
+    }
+
+    > div {
+      flex: 1;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    > img {
+      width: 25rem;
+      height: 25rem;
+    }
+
+    > div {
+      flex: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    > img {
+      width: 22rem;
+      height: 22rem;
+    }
+
+    > div {
+      flex: 1;
+    }
+  }
 `
 
 export const TextContainer = styled.section`
@@ -27,11 +60,12 @@ export const TextContainer = styled.section`
   justify-content: center;
 
   > h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     background: ${({ theme }) => theme.gradient};
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0.5px ${({ theme }) => lighten(0.2, theme.header)};
+    gap: 1rem;
   }
 
   > h2 {
@@ -40,7 +74,54 @@ export const TextContainer = styled.section`
   }
 
   > h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: ${({ theme }) => theme.text};
   }
+
+  @media (max-width: 1000px) {
+    > h1 {
+      font-size: 3rem;
+    }
+
+    > h2 {
+      font-size: 2rem;
+    }
+
+    > h3 {
+      width: 200px;
+      font-size: 1.2rem;
+    }
+  }
+`
+
+export const Social = styled.button`
+  width: 4rem;
+  height: 4rem;
+  display: grid;
+  place-items: center;
+  background: ${({ theme }) => theme.background};
+  box-shadow: 0 2px 8px 0 ${({ theme }) => opacify(0.1, theme.tertiary)};
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: 0.3s;
+  font-size: 2.6rem;
+  padding: 6px;
+
+  &:hover {
+    opcaity: 0.7;
+    scale: 1.1;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+`
+
+export const SocialContainer = styled.div`
+  padding-top: 10rem;
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
