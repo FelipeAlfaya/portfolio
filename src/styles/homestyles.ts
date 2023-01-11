@@ -13,4 +13,9 @@ export const HomeContainer = styled.div`
     flex-direction: column;
     gap: 8rem;
   }
+
+  > body {
+    background: ${({ theme }) => theme.background};
+    height: 180vh;
+  }
 `

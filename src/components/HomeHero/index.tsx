@@ -17,7 +17,8 @@ export function HomeHero() {
                 strings: ['A Web-developer!'],
                 autoStart: true,
                 loop: true,
-                delay: 75,
+                delay: 125,
+                cursor: '_',
               }}
             />
           </h3>

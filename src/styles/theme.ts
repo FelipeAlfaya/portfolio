@@ -7,7 +7,7 @@ const theme = {
   tertiary: '#2B2C28',
   header: 'rgba(32, 34, 34, 0.7)',
   error: '#d45d5d',
-  gradient: 'linear-gradient(90deg, #7DE2D1 0%, #848DA0 100%)',
+  gradient: 'linear-gradient(90deg, #7DE2D1 0%, #339989 100%)',
 }
 
 export default theme

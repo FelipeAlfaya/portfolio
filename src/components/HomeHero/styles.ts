@@ -1,3 +1,4 @@
+import { lighten } from 'polished'
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -30,6 +31,7 @@ export const TextContainer = styled.section`
     background: ${({ theme }) => theme.gradient};
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px ${({ theme }) => lighten(0.2, theme.header)};
   }
 
   > h2 {
