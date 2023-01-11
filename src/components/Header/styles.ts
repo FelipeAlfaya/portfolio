@@ -14,6 +14,7 @@ export const Container = styled.header`
   border-bottom: 1px solid ${({ theme }) => lighten(0.2, theme.header)};
   background: ${({ theme }) => theme.header};
   box-shadow: 0 8px 32px 0 rgba(10, 10, 10, 0.37);
+  user-select: none;
 
   ul {
     display: flex;
