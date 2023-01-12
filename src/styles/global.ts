@@ -1,3 +1,4 @@
+import { lighten } from 'polished'
 import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
@@ -8,6 +9,20 @@ export default createGlobalStyle`
     outline: 0;
     border: 0;
     font-family: 'Poppins', sans-serif;
+
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 5px;
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      background: ${({ theme }) => theme.primary};
+      border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-track{
+      background: ${({ theme }) => lighten(0.2, theme.primary)};
+    }
   }
 
   body {
