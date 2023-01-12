@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15rem;
+  gap: 5rem;
   margin-top: 5rem;
   border-bottom: 1px solid ${({ theme }) => lighten(0.2, theme.background)};
 
@@ -75,6 +75,7 @@ export const TextContainer = styled.section`
   justify-content: center;
 
   > h1 {
+    margin-left: 7px;
     font-size: 3.5rem;
     background: ${({ theme }) => theme.gradient};
     -webkit-background-clip: text;
@@ -84,27 +85,48 @@ export const TextContainer = styled.section`
   }
 
   > h2 {
+    margin-left: 7px;
     font-size: 2.5rem;
     color: ${({ theme }) => theme.text};
   }
 
   > h3 {
+    margin-left: 7px;
     font-size: 2rem;
     color: ${({ theme }) => theme.text};
   }
 
   @media (max-width: 1000px) {
+    margin-left: 7px;
     > h1 {
+      margin-left: 7px;
       font-size: 3rem;
     }
 
     > h2 {
+      margin-left: 7px;
       font-size: 2rem;
     }
 
     > h3 {
+      margin-left: 7px;
       width: 200px;
       font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    > h1 {
+      font-size: 2.5rem;
+    }
+
+    > h2 {
+      font-size: 1.8rem;
+    }
+
+    > h3 {
+      width: 200px;
+      font-size: 1rem;
     }
   }
 `
@@ -123,6 +145,12 @@ export const Social = styled.button`
   font-size: 2.6rem;
   padding: 6px;
 
+  @media (max-width: 768px) {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.8rem;
+  }
+
   &:hover {
     opcaity: 0.7;
     scale: 1.1;
@@ -139,6 +167,14 @@ export const SocialContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 1450px) {
+    padding-top: 5rem;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 2rem;
+  }
 `
 
 export const Howdy = styled.div`

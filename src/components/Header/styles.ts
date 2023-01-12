@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { lighten, modularScale } from 'polished'
+import { lighten } from 'polished'
 
 interface NavLinkProps {
   isActive: boolean
@@ -28,14 +28,14 @@ export const NavLinkContainer = styled.li<NavLinkProps>`
     text-transform: uppercase;
     color: ${(props) =>
       props.isActive ? props.theme.secondary : props.theme.text};
-    text-weight: 700;
+    font-weight: 700;
     transition: 0.3s;
   }
 
   &:after {
     display: block;
     content: '';
-    border-bottom: solid 1.5px ${({ theme }) => theme.secondary};
+    border-bottom: solid 2.8px ${({ theme }) => theme.secondary};
     transform: scaleX(0);
     transition: transform 300ms ease-in-out;
   }

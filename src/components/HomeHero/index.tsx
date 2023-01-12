@@ -11,6 +11,7 @@ import { FaLinkedin } from 'react-icons/fa'
 //styles
 import * as C from './styles'
 import Link from 'next/link'
+import Button from '../Button'
 
 export function HomeHero() {
   return (
@@ -18,9 +19,6 @@ export function HomeHero() {
       <div>
         <C.TextContainer>
           <h1>Howdy</h1>
-          {/* <C.Howdy>
-            <h2>Howdy</h2>
-          </C.Howdy> */}
           <h2>I'm Alfaya</h2>
           <h3>
             <Typewriter
@@ -33,6 +31,11 @@ export function HomeHero() {
               }}
             />
           </h3>
+          <Button color='#fff'>
+            <Link legacyBehavior href={'/'}>
+              <a>Get in Touch</a>
+            </Link>
+          </Button>
           <C.SocialContainer>
             <C.Social>
               <a href='https://www.instagram.com/alfaaya/' target='_blank'>
