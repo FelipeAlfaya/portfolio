@@ -8,11 +8,26 @@ export const Container = styled.div`
   justify-content: center;
   gap: 15rem;
   margin-top: 5rem;
+  border-bottom: 1px solid ${({ theme }) => lighten(0.2, theme.background)};
+
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
 
   > img {
     width: 40rem;
     height: 40rem;
     flex: 1;
+    user-select: none;
+    animation: float 6s ease-in-out infinite;
   }
 
   > div {
@@ -114,7 +129,7 @@ export const Social = styled.button`
   }
 
   &:active {
-    opacity: 0.7;
+    opacity: 0.5;
   }
 `
 
@@ -124,4 +139,18 @@ export const SocialContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`
+
+export const Howdy = styled.div`
+  > h2 {
+    position: absolute;
+    top: 14rem;
+    margin-left: 0.8rem;
+    font-weight: 300;
+    font-size: 4rem;
+    color: ${({ theme }) => theme.textDark};
+    opacity: 0.2;
+    font-style: italic;
+    user-select: none;
+  }
 `

@@ -18,6 +18,9 @@ export function HomeHero() {
       <div>
         <C.TextContainer>
           <h1>Howdy</h1>
+          {/* <C.Howdy>
+            <h2>Howdy</h2>
+          </C.Howdy> */}
           <h2>I'm Alfaya</h2>
           <h3>
             <Typewriter
