@@ -1,7 +1,7 @@
 //banners
 import bannerRT from '../../assets/react.svg'
 import bannerTS from '../../assets/typescript.svg'
-import bannerJS from '../../assets/javascript.svg'
+import bannerJS from '../../assets/Javascript.svg'
 import bannerAG from '../../assets/angularJS.svg'
 import bannerNT from '../../assets/next.svg'
 import bannerND from '../../assets/node.svg'
