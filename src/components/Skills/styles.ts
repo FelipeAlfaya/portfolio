@@ -62,6 +62,7 @@ export const Skill = styled.span`
   padding: 5px;
 
   > img {
+    content: '';
     position: absolute;
     display: flex;
     width: 20rem;
@@ -73,6 +74,7 @@ export const Skill = styled.span`
     border-radius: 10px;
 
     &:hover {
+      content: 'test';
       transform: scale(1.1);
       opacity: 0.4;
     }
