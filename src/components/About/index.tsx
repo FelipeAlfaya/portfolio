@@ -2,7 +2,7 @@
 import * as C from './styles'
 
 //icons
-import { BsFillPersonFill } from 'react-icons/Bs'
+import { BsFillPersonFill } from 'react-icons/bs'
 import { CgProfile } from 'react-icons/cg'
 
 //images and Next
