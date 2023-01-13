@@ -61,21 +61,6 @@ export const Skill = styled.span`
   cursor: pointer;
   padding: 5px;
 
-  > h1,
-  a {
-    opacity: 0;
-    z-index: 1;
-    color: ${({ theme }) => theme.text};
-  }
-
-  > img:hover {
-    h1,
-    a {
-      display: flex;
-      opacity: 1;
-    }
-  }
-
   > img {
     position: absolute;
     display: flex;

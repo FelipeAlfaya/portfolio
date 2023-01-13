@@ -26,9 +26,6 @@ export function Skills() {
         <hr />
         <C.SkillsContainer>
           <C.Skill>
-            <h1>React</h1>
-            <br />
-            <a>Experience: X</a>
             <Image src={bannerRT} width={100} height={100} alt='' />
           </C.Skill>
           <C.Skill>
