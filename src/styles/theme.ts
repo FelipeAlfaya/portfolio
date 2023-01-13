@@ -9,6 +9,7 @@ const theme = {
   header: 'rgba(32, 34, 34, 0.7)',
   error: '#d45d5d',
   gradient: 'linear-gradient(90deg, #7DE2D1 0%, #339989 100%)',
+  circlegradient: 'conic-gradient(#7DE2D1 20deg, transparent 120deg)',
 }
 
 export default theme

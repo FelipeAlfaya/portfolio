@@ -5,6 +5,7 @@ import * as H from '../styles/homestyles'
 import Header from '../components/Header'
 import { HomeHero } from '../components/HomeHero'
 import { About } from '../components/About'
+import { Skills } from '../components/Skills'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <main className='container'>
         <HomeHero />
         <About />
+        <Skills />
       </main>
     </H.HomeContainer>
   )

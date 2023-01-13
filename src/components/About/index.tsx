@@ -31,7 +31,7 @@ export function About() {
               applications using Angular, React and NextJS. With the time and
               wanting to get new experiences, I learnt NodeJS, Express and
               Restify, to expand my mind to new zones that I haven’t reached
-              before.
+              before. I have experience with figma and UI/UX as well.
             </p>
             <hr />
             <p>Location: Bahia, Brazil</p>
