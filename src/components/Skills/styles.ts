@@ -6,8 +6,9 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 5px;
-  margin-top: -10px;
+  padding: 12px;
+  /* margin: 10px; */
+  /* margin-top: -10px; */
   border-bottom: 1px solid ${({ theme }) => lighten(0.2, theme.background)};
 `
 
@@ -46,20 +47,35 @@ export const SkillsContainer = styled.div`
   justify-content: center;
   flex-direciton: row;
   flex-wrap: wrap;
-  gap: 4rem;
+  gap: 16px;
   user-select: none;
   position: relative;
 `
 
 export const Skill = styled.span`
-  width: 21rem;
-  height: 11.2rem;
+  width: 19.9rem;
+  height: 10.4rem;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   cursor: pointer;
   padding: 5px;
+  z-index: 999;
+  transition: 0.3s;
+
+  > a {
+    display: none;
+    font-size: 1rem;
+    color: ${({ theme }) => theme.text};
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 5px;
+    z-index: 1;
+    font-weight: 300;
+    transition: 0.3s;
+  }
 
   > img {
     content: '';
@@ -67,20 +83,24 @@ export const Skill = styled.span`
     display: flex;
     width: 20rem;
     height: 10.4rem;
-    margin: 5px;
+    margin: 3px;
     justify-content: center;
     align-items: center;
     transition: 0.3s;
     border-radius: 10px;
+  }
 
-    &:hover {
-      content: 'test';
+  &:hover {
+    > a {
+      display: block;
+      transition: 0.3s;
       transform: scale(1.1);
-      opacity: 0.4;
     }
 
-    &:not(:hover) {
-      opacity: 1;
+    > img {
+      transform: scale(1.06);
+      opacity: 0.4;
+      display: block;
     }
   }
 `
