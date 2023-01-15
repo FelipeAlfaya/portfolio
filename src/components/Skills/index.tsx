@@ -6,6 +6,7 @@ import bannerAG from '../../assets/angularJS.svg'
 import bannerNT from '../../assets/next.svg'
 import bannerND from '../../assets/node.svg'
 
+//styles
 import Image from 'next/image'
 import * as C from './styles'
 import { GiComputing } from 'react-icons/gi'

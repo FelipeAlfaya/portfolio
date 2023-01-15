@@ -6,6 +6,10 @@ export const Supercontainer = styled.div`
   border-bottom: 1px solid ${({ theme }) => lighten(0.2, theme.background)};
   padding: 5px;
   margin: 10px;
+
+  @media (max-width: 500px) {
+    margin-left: 2.5rem;
+  }
 `
 
 export const Text = styled.section`
@@ -59,6 +63,10 @@ export const Container = styled.div`
       flex: 1;
     }
   }
+
+  @media (max-width: 666px) {
+    flex-direction: column;
+  }
 `
 
 export const TextContainer = styled.section`
@@ -81,8 +89,8 @@ export const TextContainer = styled.section`
   > h2 {
     z-index: -1;
     position: absolute;
-    margin-top: -10rem;
-    margin-left: 0.8rem;
+    margin-bottom: 3.5rem;
+    margin-left: 5rem;
     font-weight: 300;
     font-size: 4rem;
     color: ${({ theme }) => theme.textDark};
@@ -93,9 +101,7 @@ export const TextContainer = styled.section`
 
   @media (max-width: 1000px) {
     width: 100%;
-    margin: 0;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin: 3rem;
     align-items: center;
 
     > h1 {
@@ -110,7 +116,6 @@ export const TextContainer = styled.section`
 
   @media (max-width: 768px) {
     width: 100%;
-    margin: 0;
     margin-top: 3rem;
     margin-bottom: 3rem;
 
@@ -120,7 +125,43 @@ export const TextContainer = styled.section`
 
     > h2 {
       font-size: 3.5rem;
-      margin-top: -14rem;
+      margin-top: -13.5rem;
+    }
+  }
+
+  @media (max-width: 666px) {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    > h1 {
+      font-size: 2rem;
+    }
+
+    > h2 {
+      font-size: 2.5rem;
+      margin-top: -9rem;
+      maring-left: 0.5rem;
+    }
+
+    > p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    > h1 {
+      font-size: 2rem;
+    }
+
+    > h2 {
+      font-size: 2.5rem;
+      margin-top: -16rem;
+      maring-left: 0.5rem;
     }
   }
 `

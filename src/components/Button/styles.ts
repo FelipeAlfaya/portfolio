@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  min-width: 135px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,6 +50,12 @@ export const Container = styled.div`
   a {
     color: ${({ theme }) => theme.text};
     font-size: 14px;
+  }
+
+  @media (max-width: 800px) {
+    a {
+      font-size: 13px;
+    }
   }
 
   @media (max-width: 768px) {

@@ -7,9 +7,12 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   padding: 12px;
-  /* margin: 10px; */
-  /* margin-top: -10px; */
+  margin-right: 15px;
   border-bottom: 1px solid ${({ theme }) => lighten(0.2, theme.background)};
+
+  @media (max-width: 390px) {
+    width: 123%;
+  }
 `
 
 export const TitleContainer = styled.section`
@@ -39,6 +42,16 @@ export const TitleContainer = styled.section`
     font-style: italic;
     user-select: none;
   }
+
+  @media (max-width: 666px) {
+    > h1 {
+      font-size: 2.5rem;
+    }
+
+    > h2 {
+      font-size: 3rem;
+    }
+  }
 `
 
 export const SkillsContainer = styled.div`
@@ -50,6 +63,10 @@ export const SkillsContainer = styled.div`
   gap: 16px;
   user-select: none;
   position: relative;
+
+  @media (max-width: 666px) {
+    gap: 12px;
+  }
 `
 
 export const Skill = styled.span`
@@ -61,7 +78,6 @@ export const Skill = styled.span`
   justify-content: center;
   flex-direction: column;
   cursor: pointer;
-  padding: 5px;
   z-index: 999;
   transition: 0.3s;
 
@@ -83,7 +99,6 @@ export const Skill = styled.span`
     display: flex;
     width: 20rem;
     height: 10.4rem;
-    margin: 3px;
     justify-content: center;
     align-items: center;
     transition: 0.3s;
@@ -103,6 +118,54 @@ export const Skill = styled.span`
       display: block;
     }
   }
+
+  @media (max-width: 1000px) {
+    width: 15rem;
+    height: 8rem;
+
+    > img {
+      width: 15rem;
+      height: 8rem;
+    }
+  }
+
+  @media (max-width: 666px) {
+    width: 12rem;
+    height: 6rem;
+
+    > img {
+      width: 12rem;
+      height: 6rem;
+    }
+
+    > a {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 510px) {
+    width: 10rem;
+    height: 5rem;
+
+    > img {
+      width: 10rem;
+      height: 5rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    width: 8rem;
+    height: 4rem;
+
+    > img {
+      width: 8rem;
+      height: 4rem;
+    }
+
+    > a {
+      font-size: 0.6rem;
+    }
+  }
 `
 
 export const TextContainer = styled.section`
@@ -112,5 +175,17 @@ export const TextContainer = styled.section`
     margin: 5px;
     margin-top: -10px;
     padding: 5px;
+  }
+
+  @media (max-width: 666px) {
+    > p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    > p {
+      font-size: 0.8rem;
+    }
   }
 `

@@ -66,6 +66,43 @@ export const Container = styled.div`
       flex: 1;
     }
   }
+
+  @media (max-width: 666px) {
+    > img {
+      width: 18rem;
+      height: 18rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    position: relative;
+    padding: 0;
+    gap: 0;
+
+    > img {
+      width: 13rem;
+      height: 13rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    width: 110%;
+    margin-left: 1rem;
+
+    > img {
+      width: 13rem;
+      height: 13rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    /* width: 123%; */
+    margin-right: 1rem;
+
+    > img {
+      width: 10rem;
+      height: 10rem;
+    }
 `
 
 export const TextContainer = styled.section`
@@ -129,6 +166,23 @@ export const TextContainer = styled.section`
       font-size: 1rem;
     }
   }
+
+  @media (max-width: 600px) {
+    margin: 0;
+
+    > h1 {
+      font-size: 1.8rem;
+    }
+
+    > h2 {
+      font-size: 1.3rem;
+    }
+
+    > h3 {
+      width: 200px;
+      font-size: 0.8rem;
+    }
+  }
 `
 
 export const Social = styled.button`
@@ -174,6 +228,10 @@ export const SocialContainer = styled.div`
 
   @media (max-width: 768px) {
     padding-top: 2rem;
+  }
+
+  @media (max-width: 666px) {
+    padding: 1rem;
   }
 `
 
