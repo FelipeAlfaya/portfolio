@@ -89,7 +89,7 @@ export const TextContainer = styled.section`
   > h2 {
     z-index: -1;
     position: absolute;
-    margin-bottom: 3.5rem;
+    margin-top: -12rem;
     margin-left: 5rem;
     font-weight: 300;
     font-size: 4rem;
