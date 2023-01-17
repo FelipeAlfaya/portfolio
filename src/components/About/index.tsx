@@ -1,4 +1,5 @@
 //syles
+import Button from '../Button'
 import * as C from './styles'
 
 //icons
@@ -35,6 +36,11 @@ export function About() {
             </p>
             <hr />
             <p>Location: Bahia, Brazil</p>
+            <Button color='#fff'>
+              <a href='../../assets/ENG.pdf' download>
+                CV Download
+              </a>
+            </Button>
           </C.TextContainer>
         </C.Container>
       </C.Supercontainer>
