@@ -6,7 +6,7 @@ import Header from '../components/Header'
 import { HomeHero } from '../components/HomeHero'
 import { About } from '../components/About'
 import { Skills } from '../components/Skills'
-import { Projects } from '../components/Projects'
+import { Contact } from '../components/Contact'
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
         <HomeHero />
         <About />
         <Skills />
-        {/* <Projects /> */}
+        {/* <Contact /> */}
       </main>
     </H.HomeContainer>
   )
