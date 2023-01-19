@@ -63,6 +63,7 @@ export const SkillsContainer = styled.div`
   gap: 16px;
   user-select: none;
   position: relative;
+  margin: 8px;
 
   @media (max-width: 666px) {
     gap: 12px;
@@ -187,5 +188,14 @@ export const TextContainer = styled.section`
     > p {
       font-size: 0.8rem;
     }
+  }
+`
+
+export const HiddenContainer = styled.div`
+  display: none;
+
+  &.show {
+    display: block;
+    transition: 0.3s;
   }
 `
