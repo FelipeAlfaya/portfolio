@@ -52,14 +52,33 @@ export const Container = styled.div`
     font-size: 14px;
   }
 
+  > button {
+    background: none;
+    border: none;
+    color: ${({ theme }) => theme.text};
+    font-size: 14px;
+    cursor: pointer;
+    outline: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
   @media (max-width: 800px) {
     a {
+      font-size: 13px;
+    }
+
+    > button {
       font-size: 13px;
     }
   }
 
   @media (max-width: 768px) {
     a {
+      font-size: 12px;
+    }
+
+    > button {
       font-size: 12px;
     }
   }

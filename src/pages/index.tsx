@@ -17,7 +17,7 @@ export default function Home() {
         <HomeHero />
         <About />
         <Skills />
-        {/* <Contact /> */}
+        <Contact />
       </main>
     </H.HomeContainer>
   )
