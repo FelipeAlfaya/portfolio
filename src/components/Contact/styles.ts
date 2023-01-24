@@ -9,7 +9,6 @@ export const Container = styled.div`
   padding: 5rem;
   margin-right: 15px;
   border-radius: 10px;
-  /* border: 0.5px solid ${({ theme }) => lighten(0.2, theme.background)}; */
 
   @media (max-width: 390px) {
     width: 123%;
@@ -44,13 +43,34 @@ export const TitleContainer = styled.section`
     user-select: none;
   }
 
-  @media (max-width: 666px) {
+  @media (max-width: 768px) {
+    > h1 {
+      font-size: 3rem;
+    }
+
+    > h2 {
+      font-size: 3.5rem;
+    }
+  }
+
+  @media (max-width: 680px) {
     > h1 {
       font-size: 2.5rem;
     }
 
     > h2 {
       font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    > h1 {
+      font-size: 1.5rem;
+      margin-top: -1.5rem;
+    }
+
+    > h2 {
+      font-size: 2rem;
     }
   }
 `
@@ -100,6 +120,10 @@ export const FormContainer = styled.section`
     color: ${({ theme }) => theme.text};
     font-size: 1.2rem;
     transition: 0.2s;
+
+    @media (max-width: 500px) {
+      font-size: 0.8rem;
+    }
   }
 
   > form > div > input:focus {
@@ -118,6 +142,10 @@ export const FormContainer = styled.section`
     color: ${({ theme }) => theme.text};
     font-size: 1.2rem;
     transition: 0.2s;
+
+    @media (max-width: 500px) {
+      font-size: 0.8rem;
+    }
   }
 
   > form > span > textarea:focus {

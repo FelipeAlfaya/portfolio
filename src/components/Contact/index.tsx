@@ -3,6 +3,7 @@ import Button from '../Button'
 import * as C from './styles'
 import { BiMailSend } from 'react-icons/bi'
 import { sendContactEmail } from '../../services/sendMail'
+import toast, { Toaster } from 'react-hot-toast'
 
 export function Contact() {
   const [nome, setNome] = useState('')
@@ -13,7 +14,14 @@ export function Contact() {
     event.preventDefault()
     console.log(nome, senderMail, content)
     if (nome === '' || senderMail === '' || content === '') {
-      alert('Please fill all the fields.')
+      toast('Please fill all the fields.', {
+        position: 'bottom-right',
+        icon: '⚠',
+        style: {
+          backgroundColor: '#f1852d',
+          color: '#D9D9D9',
+        },
+      })
       return
     }
     try {
@@ -21,9 +29,16 @@ export function Contact() {
       setNome('')
       setSenderMail('')
       setContent('')
-      alert('Message sent successfully!')
+      toast('Message sent successfully!', {
+        position: 'bottom-right',
+        icon: '✔',
+        style: {
+          backgroundColor: '#04c714',
+          color: '#D9D9D9',
+        },
+      })
     } catch {
-      alert('Error sending message. Please try again later.')
+      toast.error('Error sending message. Please try again later.')
     }
   }
 
@@ -64,6 +79,7 @@ export function Contact() {
               Send
             </button>
           </Button>
+          <Toaster />
         </form>
       </C.FormContainer>
     </C.Container>

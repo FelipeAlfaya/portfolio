@@ -7,6 +7,7 @@ import { HomeHero } from '../components/HomeHero'
 import { About } from '../components/About'
 import { Skills } from '../components/Skills'
 import { Contact } from '../components/Contact'
+import { Toaster } from 'react-hot-toast'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <About />
         <Skills />
         <Contact />
+        <Toaster />
       </main>
     </H.HomeContainer>
   )
