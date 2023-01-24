@@ -14,6 +14,11 @@ import Link from 'next/link'
 import Button from '../Button'
 
 export function HomeHero() {
+  const handleScroll = () => {
+    const element = document.getElementById('git')
+    element?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <C.Container>
       <div>
@@ -31,10 +36,8 @@ export function HomeHero() {
               }}
             />
           </h3>
-          <Button color='#fff'>
-            <Link legacyBehavior href={'/'}>
-              <a>Get in Touch</a>
-            </Link>
+          <Button color='#fff' onClick={handleScroll}>
+            <a>Get in Touch</a>
           </Button>
           <C.SocialContainer>
             <C.Social>

@@ -18,7 +18,9 @@ export default function Home() {
         <HomeHero />
         <About />
         <Skills />
-        <Contact />
+        <div id='git'>
+          <Contact />
+        </div>
         <Toaster />
       </main>
     </H.HomeContainer>
