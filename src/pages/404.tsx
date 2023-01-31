@@ -7,20 +7,20 @@ import Button from '../components/Button'
 
 const NotFound = () => {
   return (
-    // <Particle>
     <>
-      <Header />
       <C.Container>
-        <C.TextContainer>
-          <C.BigText>404</C.BigText>
-          <h1>Page not found or removed.</h1>
-          <Button>
-            <Link href='/'>Go back to home</Link>
-          </Button>
-        </C.TextContainer>
+        <Particle>
+          <Header />
+          <C.TextContainer>
+            <C.BigText>404</C.BigText>
+            <h1>Page not found or removed.</h1>
+            <Button>
+              <Link href='/'>Go back to home</Link>
+            </Button>
+          </C.TextContainer>
+        </Particle>
       </C.Container>
     </>
-    // </Particle>
   )
 }
 

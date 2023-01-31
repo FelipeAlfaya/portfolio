@@ -3,8 +3,6 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: grid;
   place-items: center;
-  /* align-items: center;
-  flex-direction: column; */
   margin-top: 23rem;
   height: 92vh;
   margin: 0;
@@ -12,7 +10,9 @@ export const Container = styled.div`
   text-align: center;
 
   @media (max-width: 500px) {
-    margin-left: 9rem;
+    /* margin-left: 4.5rem; */
+    width: 650px;
+    height: 100vh;
   }
 `
 
