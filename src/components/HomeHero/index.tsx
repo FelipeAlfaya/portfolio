@@ -10,7 +10,6 @@ import { FaLinkedin } from 'react-icons/fa'
 
 //styles
 import * as C from './styles'
-import Link from 'next/link'
 import Button from '../Button'
 
 export function HomeHero() {

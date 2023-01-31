@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   min-width: 135px;
+  max-width: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,9 +23,11 @@ export const Container = styled.div`
   transition: 0.3s ease-in;
   user-select: none;
   text-decoration: none;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 
   &:hover {
-    color: ${({ theme }) => theme.white}};
+    color: ${({ theme }) => theme.white};
   }
 
   &:before {
