@@ -2,17 +2,11 @@ import { lighten } from 'polished'
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   flex-direction: column;
   padding: 12px;
-  margin-right: 15px;
   border-bottom: 1px solid ${({ theme }) => lighten(0.2, theme.background)};
-
-  @media (max-width: 390px) {
-    width: 123%;
-  }
 `
 
 export const TitleContainer = styled.section`
@@ -74,9 +68,10 @@ export const Skill = styled.span`
   width: 19.9rem;
   height: 10.4rem;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
   flex-direction: column;
   cursor: pointer;
   z-index: 999;
@@ -121,51 +116,11 @@ export const Skill = styled.span`
   }
 
   @media (max-width: 1000px) {
-    width: 15rem;
-    height: 8rem;
-
-    > img {
-      width: 15rem;
-      height: 8rem;
-    }
+    grid-template-columns: 1fr 1fr;
   }
 
-  @media (max-width: 666px) {
-    width: 12rem;
-    height: 6rem;
-
-    > img {
-      width: 12rem;
-      height: 6rem;
-    }
-
-    > a {
-      font-size: 0.8rem;
-    }
-  }
-
-  @media (max-width: 510px) {
-    width: 10rem;
-    height: 5rem;
-
-    > img {
-      width: 10rem;
-      height: 5rem;
-    }
-  }
-
-  @media (max-width: 400px) {
-    width: 8rem;
-    height: 4rem;
-
-    > img {
-      width: 8rem;
-      height: 4rem;
-    }
-
-    > a {
-      font-size: 0.6rem;
-    }
+  @media (max-width: 550px) {
+    grid-template-columns: 1fr;
   }
 `
 
@@ -173,7 +128,6 @@ export const TextContainer = styled.section`
   > p {
     color: ${({ theme }) => theme.text};
     font-size: 1.5rem;
-    margin: 5px;
     margin-top: -10px;
     padding: 5px;
   }
@@ -184,7 +138,7 @@ export const TextContainer = styled.section`
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     > p {
       font-size: 0.8rem;
     }

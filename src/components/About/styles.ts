@@ -8,7 +8,7 @@ export const Supercontainer = styled.div`
   margin: 10px;
 
   @media (max-width: 500px) {
-    margin-left: 2.5rem;
+    /* margin-left: 2.5rem; */
   }
 `
 
@@ -151,8 +151,6 @@ export const TextContainer = styled.section`
 
   @media (max-width: 500px) {
     width: 100%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
 
     > h1 {
       font-size: 2rem;

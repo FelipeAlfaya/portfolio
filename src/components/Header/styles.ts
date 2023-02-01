@@ -27,7 +27,7 @@ export const Container = styled.header`
   }
 
   @media (max-width: 500px) {
-    width: 130vw;
+    /* width: 130vw; */
   }
 `
 

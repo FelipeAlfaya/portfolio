@@ -86,29 +86,25 @@ export const Container = styled.div`
   }
 
   @media (max-width: 500px) {
-    width: 110%;
-    margin-left: 1rem;
-
     > img {
       width: 13rem;
       height: 13rem;
     }
   }
 
-  @media (max-width: 400px) {
-    /* width: 123%; */
-    margin-right: 1rem;
+  @media (max-width: 460px) {
+    flex-direction: column-reverse;
 
     > img {
       width: 10rem;
       height: 10rem;
     }
+  }
 `
 
 export const TextContainer = styled.section`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
 
   > h1 {
@@ -147,7 +143,6 @@ export const TextContainer = styled.section`
 
     > h3 {
       margin-left: 7px;
-      width: 200px;
       font-size: 1.2rem;
     }
   }
@@ -162,7 +157,6 @@ export const TextContainer = styled.section`
     }
 
     > h3 {
-      width: 200px;
       font-size: 1rem;
     }
   }
@@ -179,9 +173,14 @@ export const TextContainer = styled.section`
     }
 
     > h3 {
-      width: 200px;
       font-size: 0.8rem;
     }
+  }
+
+  @media (max-width: 460px) {
+    margin: 0;
+    display: grid;
+    place-items: center;
   }
 `
 
@@ -219,8 +218,8 @@ export const SocialContainer = styled.div`
   padding-top: 10rem;
   gap: 2rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  /* justify-content: center; */
 
   @media (max-width: 1450px) {
     padding-top: 5rem;

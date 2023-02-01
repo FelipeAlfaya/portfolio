@@ -19,7 +19,7 @@ const Particle = (props: Props) => {
     },
     particles: {
       color: {
-        value: theme.primary,
+        value: '#0197AF',
       },
       line_linked: {
         width: 2,
