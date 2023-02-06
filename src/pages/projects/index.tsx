@@ -6,9 +6,6 @@ import { AiOutlineProject } from 'react-icons/ai'
 import Port from '../../assets/port.png'
 
 function index() {
-  const portfolioimg =
-    'blob:' + 'https://vercel.com/e9ec8c49-0855-462f-9789-7fdf18d6461f'
-
   return (
     <C.Container>
       <Header />
@@ -19,11 +16,11 @@ function index() {
         </h2>
       </C.TitleContainer>
       <main className='container'>
-        <ProjectItem
+        {/* <ProjectItem
           title='Portfolio'
           type='Website'
           slug='portfolio'
-          imgUrl={portfolioimg}
+          imgUrl='blob:https://vercel.com/e9ec8c49-0855-462f-9789-7fdf18d6461f'
           description='Portfolio desenvolvido com NextJS e Styled Components'
           repo='https://github.com/FelipeAlfaya/portfolio'
         />
@@ -50,7 +47,7 @@ function index() {
           imgUrl='https://www.computerhope.com/jargon/h/img.png'
           description='lorem5'
           repo='https://www.google.com'
-        />
+        /> */}
       </main>
     </C.Container>
   )
