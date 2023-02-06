@@ -113,7 +113,9 @@ export const TextContainer = styled.section`
     background: ${({ theme }) => theme.gradient};
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.5px ${({ theme }) => lighten(0.2, theme.header)};
+    font-weight: 700;
+    text-shadow: 0 0 0.5em ${({ theme }) => theme.secondary},
+      0 0 0.1em ${({ theme }) => theme.secondary};
     gap: 1rem;
   }
 

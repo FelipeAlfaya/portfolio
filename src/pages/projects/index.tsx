@@ -3,9 +3,12 @@ import Header from '../../components/Header'
 import * as C from '../../styles/projectstyles'
 import { ProjectItem } from '../../components/ProjectItem'
 import { AiOutlineProject } from 'react-icons/ai'
-import Particle from '../../components/Particle'
+import Port from '../../assets/port.png'
 
 function index() {
+  const portfolioimg =
+    'blob:' + 'https://vercel.com/e9ec8c49-0855-462f-9789-7fdf18d6461f'
+
   return (
     <C.Container>
       <Header />
@@ -15,29 +18,29 @@ function index() {
           <AiOutlineProject />
         </h2>
       </C.TitleContainer>
-      {/* <main className='container'>
+      <main className='container'>
         <ProjectItem
           title='Portfolio'
           type='Website'
-          slug='teste'
-          imgUrl='https://www.computerhope.com/jargon/h/img.png'
+          slug='portfolio'
+          imgUrl={portfolioimg}
           description='Portfolio desenvolvido com NextJS e Styled Components'
           repo='https://github.com/FelipeAlfaya/portfolio'
         />
         <ProjectItem
           title='Netflix Clone'
           type='Website'
-          slug='teste'
+          slug='netflix'
           imgUrl='https://www.computerhope.com/jargon/h/img.png'
-          description='Portfolio desenvolvido com NextJS e Styled Components'
+          description='Netflix Clone made with NextJS and TailwindCSS'
           repo='https://www.google.com'
         />
         <ProjectItem
           title='Pokedex'
           type='Website'
-          slug='teste'
+          slug='pokedex'
           imgUrl='https://www.computerhope.com/jargon/h/img.png'
-          description='Portfolio desenvolvido com NextJS e Styled Components'
+          description='Pokedex made in Angular'
           repo='https://www.google.com'
         />
         <ProjectItem
@@ -48,7 +51,7 @@ function index() {
           description='lorem5'
           repo='https://www.google.com'
         />
-      </main> */}
+      </main>
     </C.Container>
   )
 }

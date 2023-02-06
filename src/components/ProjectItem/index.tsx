@@ -10,17 +10,10 @@ type ProjectItemProps = {
   repo: string
 }
 
-export function ProjectItem({
-  title,
-  description,
-  type,
-  imgUrl,
-  slug,
-  repo,
-}: ProjectItemProps) {
+export function ProjectItem({ title, type, imgUrl, slug }: ProjectItemProps) {
   return (
     <C.Container imgUrl={imgUrl}>
-      <Link legacyBehavior href={`/project/${slug}`}>
+      <Link legacyBehavior href={`/projects/${slug}`}>
         <a>
           <div className='overlay' />
           <section>

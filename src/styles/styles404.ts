@@ -6,7 +6,6 @@ export const Container = styled.div`
   height: 92vh;
   margin: 0;
   z-index: 9;
-  text-align: center;
 
   @media (max-width: 500px) {
     width: 650px;
@@ -15,6 +14,9 @@ export const Container = styled.div`
 `
 
 export const Text = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: #fff;
   font-size: 1.5rem;
@@ -44,8 +46,8 @@ export const BigText = styled.a`
 `
 
 export const TextContainer = styled.div`
-  display: flex;
-  align-items: center;
+  display: grid;
+  place-items: center;
   flex-direction: column;
   user-select: none;
 
