@@ -4,6 +4,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100%;
 
@@ -12,7 +13,7 @@ export const Container = styled.div`
     margin-bottom: 5rem;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 
     @media (max-width: 1000px) {

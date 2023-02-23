@@ -3,7 +3,6 @@ import Header from '../../components/Header'
 import * as C from '../../styles/projectstyles'
 import { ProjectItem } from '../../components/ProjectItem'
 import { AiOutlineProject } from 'react-icons/ai'
-import Port from '../../assets/port.png'
 
 function index() {
   return (
@@ -16,11 +15,11 @@ function index() {
         </h2>
       </C.TitleContainer>
       <main className='container'>
-        {/* <ProjectItem
+        <ProjectItem
           title='Portfolio'
           type='Website'
           slug='portfolio'
-          imgUrl='blob:https://vercel.com/e9ec8c49-0855-462f-9789-7fdf18d6461f'
+          imgUrl=''
           description='Portfolio desenvolvido com NextJS e Styled Components'
           repo='https://github.com/FelipeAlfaya/portfolio'
         />
@@ -28,7 +27,7 @@ function index() {
           title='Netflix Clone'
           type='Website'
           slug='netflix'
-          imgUrl='https://www.computerhope.com/jargon/h/img.png'
+          imgUrl='https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png'
           description='Netflix Clone made with NextJS and TailwindCSS'
           repo='https://www.google.com'
         />
@@ -36,18 +35,10 @@ function index() {
           title='Pokedex'
           type='Website'
           slug='pokedex'
-          imgUrl='https://www.computerhope.com/jargon/h/img.png'
+          imgUrl='https://pngimg.com/d/pokeball_PNG8.png'
           description='Pokedex made in Angular'
           repo='https://www.google.com'
         />
-        <ProjectItem
-          title='Projeto 01'
-          type='Website'
-          slug='teste'
-          imgUrl='https://www.computerhope.com/jargon/h/img.png'
-          description='lorem5'
-          repo='https://www.google.com'
-        /> */}
       </main>
     </C.Container>
   )
