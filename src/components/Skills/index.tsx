@@ -28,8 +28,10 @@ export function Skills() {
     const container = document.getElementById('container')
     if (isHidden) {
       container?.classList.add('show')
+      container?.classList.remove('fadeout')
     } else {
       container?.classList.remove('show')
+      container?.classList.add('fadeout')
     }
   }
 

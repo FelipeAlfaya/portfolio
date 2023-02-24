@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import * as C from './styles'
 
 type ProjectItemProps = {
@@ -6,22 +5,19 @@ type ProjectItemProps = {
   description?: string
   type: string
   imgUrl: string
-  slug: string
   repo: string
 }
 
-export function ProjectItem({ title, type, imgUrl, slug }: ProjectItemProps) {
+export function ProjectItem({ title, type, imgUrl, repo }: ProjectItemProps) {
   return (
     <C.Container imgUrl={imgUrl}>
-      <Link legacyBehavior href={`/projects/${slug}`}>
-        <a>
-          <div className='overlay' />
-          <section>
-            <h1>{title}</h1>
-            <h2>{type}</h2>
-          </section>
-        </a>
-      </Link>
+      <a target='_blank' href={`${repo}`}>
+        <div className='overlay' />
+        <section>
+          <h1>{title}</h1>
+          <h2>{type}</h2>
+        </section>
+      </a>
     </C.Container>
   )
 }
