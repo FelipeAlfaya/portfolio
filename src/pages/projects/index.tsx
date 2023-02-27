@@ -18,22 +18,22 @@ function index() {
         <ProjectItem
           title='Portfolio'
           type='Website'
+          deploy='/'
           imgUrl='https://www.nicepng.com/png/detail/111-1112693_portfolio-my-portfolio.png'
-          description='Portfolio desenvolvido com NextJS e Styled Components'
           repo='https://github.com/FelipeAlfaya/portfolio'
         />
         <ProjectItem
           title='Netflix Clone'
           type='Website'
-          imgUrl='https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png'
-          description='Netflix Clone made with NextJS and TailwindCSS'
+          deploy='https://netflix-clone-teal-seven.vercel.app/'
+          imgUrl='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Netflix_2015_N_logo.svg/1200px-Netflix_2015_N_logo.svg.png'
           repo='https://github.com/FelipeAlfaya/netflix-clone'
         />
         <ProjectItem
           title='Pokedex'
           type='Website'
+          deploy='https://pokedex-liart-three.vercel.app/'
           imgUrl='https://pngimg.com/d/pokeball_PNG8.png'
-          description='Pokedex made in Angular'
           repo='https://github.com/FelipeAlfaya/pokedex'
         />
       </main>
