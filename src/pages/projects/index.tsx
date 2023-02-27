@@ -19,7 +19,7 @@ function index() {
           title='Portfolio'
           type='Website'
           deploy='/'
-          imgUrl='https://www.nicepng.com/png/detail/111-1112693_portfolio-my-portfolio.png'
+          imgUrl='https://cdn.iconscout.com/icon/free/png-256/react-1-282599.png'
           repo='https://github.com/FelipeAlfaya/portfolio'
         />
         <ProjectItem
