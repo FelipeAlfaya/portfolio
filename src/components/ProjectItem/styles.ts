@@ -14,6 +14,7 @@ export const Container = styled.div<ContainerProps>`
   flex-direction: row;
   flex-wrap: wrap;
   padding: 1em;
+  color: ${({ theme }) => theme.gray};
 `
 
 export const Content = styled.div`
@@ -40,6 +41,11 @@ export const Content = styled.div`
     font-size: 12px;
     font-wight: 300;
     text-transform: initial;
+  }
+
+  &:hover {
+    transition: 0.3s;
+    opacity: 1;
   }
 `
 

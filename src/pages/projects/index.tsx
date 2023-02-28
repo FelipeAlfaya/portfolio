@@ -33,7 +33,7 @@ function index() {
           title='Pokedex'
           type='Website'
           deploy='https://pokedex-liart-three.vercel.app/'
-          imgUrl='https://pngimg.com/d/pokeball_PNG8.png'
+          imgUrl='https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/769px-Pokebola-pokeball-png-0.png'
           repo='https://github.com/FelipeAlfaya/pokedex'
         />
       </main>

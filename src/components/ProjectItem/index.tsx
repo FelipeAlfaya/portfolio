@@ -17,16 +17,6 @@ export function ProjectItem({
   deploy,
 }: ProjectItemProps) {
   return (
-    // <C.Container imgUrl={imgUrl}>
-    //   <a target='_blank' href={`${repo}`}>
-    //     <div className='overlay' />
-    //     <section>
-    //       <h1>{title}</h1>
-    //       <h2>{type}</h2>
-    //     </section>
-    //   </a>
-    // </C.Container>
-
     <C.Container imgUrl=''>
       <C.Card>
         <C.Content>
