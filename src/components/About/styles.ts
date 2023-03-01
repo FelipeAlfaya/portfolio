@@ -6,10 +6,6 @@ export const Supercontainer = styled.div`
   border-bottom: 1px solid ${({ theme }) => lighten(0.2, theme.background)};
   padding: 5px;
   margin: 10px;
-
-  @media (max-width: 500px) {
-    /* margin-left: 2.5rem; */
-  }
 `
 
 export const Text = styled.section`
@@ -158,7 +154,7 @@ export const TextContainer = styled.section`
 
     > h2 {
       font-size: 2.5rem;
-      margin-top: -16rem;
+      margin-top: -20rem;
       maring-left: 0.5rem;
     }
   }
