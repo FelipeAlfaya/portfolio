@@ -9,10 +9,6 @@ export const Container = styled.div`
   padding: 5rem;
   margin-right: 15px;
   border-radius: 10px;
-
-  @media (max-width: 390px) {
-    width: 123%;
-  }
 `
 
 export const TitleContainer = styled.section`
@@ -28,6 +24,7 @@ export const TitleContainer = styled.section`
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0.5px ${({ theme }) => lighten(0.2, theme.header)};
     font-size: 3.5rem;
+    width: 100%;
   }
 
   > h2 {

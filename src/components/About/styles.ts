@@ -5,7 +5,10 @@ export const Supercontainer = styled.div`
   width: 100%;
   border-bottom: 1px solid ${({ theme }) => lighten(0.2, theme.background)};
   padding: 5px;
-  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `
 
 export const Text = styled.section`
@@ -35,6 +38,18 @@ export const Text = styled.section`
     opacity: 0.2;
     font-style: italic;
     user-select: none;
+  }
+
+  @media (max-width: 350px) {
+    > h1 {
+      font-size: 2rem;
+    }
+
+    > h2 {
+      font-size: 2.5rem;
+      margin-left: -1.5rem;
+      margin-bottom: -0.5rem;
+    }
   }
 `
 
@@ -128,7 +143,6 @@ export const TextContainer = styled.section`
   @media (max-width: 666px) {
     width: 100%;
     margin-top: 3rem;
-    margin-bottom: 3rem;
 
     > h1 {
       font-size: 2rem;
@@ -137,7 +151,6 @@ export const TextContainer = styled.section`
     > h2 {
       font-size: 2.5rem;
       margin-top: -9rem;
-      maring-left: 0.5rem;
     }
 
     > p {
@@ -155,7 +168,6 @@ export const TextContainer = styled.section`
     > h2 {
       font-size: 2.5rem;
       margin-top: -20rem;
-      maring-left: 0.5rem;
     }
   }
 `

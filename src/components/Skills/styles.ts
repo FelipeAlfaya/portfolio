@@ -8,10 +8,6 @@ export const Container = styled.div`
   justify-content: center;
   padding: 12px;
   border-bottom: 1px solid ${({ theme }) => lighten(0.2, theme.background)};
-
-  @media (max-width: 350px) {
-    margin-right: -27px;
-  }
 `
 
 export const TitleContainer = styled.section`

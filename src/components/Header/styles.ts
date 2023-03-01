@@ -25,10 +25,6 @@ export const Container = styled.header`
   @media (max-width: 600px) {
     flex-direction: start;
   }
-
-  @media (max-width: 500px) {
-    /* width: 130vw; */
-  }
 `
 
 export const NavLinkContainer = styled.li<NavLinkProps>`
