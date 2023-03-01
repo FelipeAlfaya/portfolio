@@ -27,11 +27,11 @@ export function About() {
             </h2>
             <h1>My Profile</h1>
             <p>
-              I’m a self taught web-developer that focus on developing web
+              I’m a self taught web-developer that focuses on developing web
               applications using Angular, React and NextJS. With the time and
-              wanting to get new experiences, I learnt NodeJS, Express and
-              Restify, to expand my mind to new zones that I haven’t reached
-              before. I have experience with figma and UI/UX as well.
+              wish to gain more experience, I learnt NodeJS, Express and Restify
+              to expand my mind to new horizons that I hadn't reached before. I
+              have experience with figma and UI/UX as well.
             </p>
             <hr />
             <p>Location: Bahia, Brazil</p>
