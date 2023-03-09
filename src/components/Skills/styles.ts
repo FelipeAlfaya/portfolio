@@ -151,6 +151,7 @@ export const HiddenContainer = styled.div`
   transition: 0.3s;
 
   &.show {
+    transition: 0.3s;
     display: block;
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
@@ -185,6 +186,37 @@ export const HiddenContainer = styled.div`
         -webkit-transform: none;
         transform: none;
       }
+    }
+  }
+
+  &.fadeout {
+    -webkit-animation-name: fadeOutUp;
+    animation-name: fadeOutUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeOutUp {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      display: none;
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+  @keyframes fadeOutUp {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      display: none;
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
     }
   }
 `
