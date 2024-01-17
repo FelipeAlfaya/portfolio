@@ -25,7 +25,20 @@ export function Contact() {
       return
     }
     try {
-      await sendContactEmail(nome, senderMail, content)
+      await fetch(
+        'https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjUwNTY5MDYzZTA0M2Q1MjZhNTUzNjUxMzEi_pc',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name: nome,
+            email: senderMail,
+            message: content,
+          }),
+        }
+      )
       setNome('')
       setSenderMail('')
       setContent('')
@@ -37,8 +50,15 @@ export function Contact() {
           color: '#D9D9D9',
         },
       })
-    } catch {
-      toast.error('Error sending message. Please try again later.')
+    } catch (error) {
+      toast('An error occurred while sending the message.', {
+        position: 'bottom-right',
+        icon: '⚠',
+        style: {
+          backgroundColor: '#f1852d',
+          color: '#D9D9D9',
+        },
+      })
     }
   }
 

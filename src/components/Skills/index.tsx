@@ -54,32 +54,32 @@ export function Skills() {
           <C.Skill>
             <Image src={bannerTS} width={100} height={100} alt='' />
             <a>TypeScript</a>
-            <a>Experience: 2 years</a>
+            <a>Experience: 3 years</a>
           </C.Skill>
           <C.Skill>
             <Image src={bannerJS} width={100} height={100} alt='' />
             <a>JavaScript</a>
-            <a>Experience: 2 years</a>
+            <a>Experience: 3 years</a>
           </C.Skill>
           <C.Skill>
             <Image src={bannerHT} width={100} height={100} alt='' />
             <a>HTML</a>
-            <a>Experience: 2 years</a>
+            <a>Experience: 4 years</a>
           </C.Skill>
           <C.Skill>
             <Image src={bannerCS} width={100} height={100} alt='' />
             <a>CSS</a>
-            <a>Experience: 2 years</a>
+            <a>Experience: 4 years</a>
           </C.Skill>
           <C.Skill>
             <Image src={bannerAG} width={100} height={100} alt='' />
             <a>Angular</a>
-            <a>Experience: 1.5 years</a>
+            <a>Experience: 3 years</a>
           </C.Skill>
           <C.Skill>
             <Image src={bannerRT} width={100} height={100} alt='' />
             <a>React</a>
-            <a>Experience: 1 year</a>
+            <a>Experience: 3 years</a>
           </C.Skill>
         </C.SkillsContainer>
         <C.HiddenContainer id='container'>
@@ -87,7 +87,7 @@ export function Skills() {
             <C.Skill>
               <Image src={bannerSS} width={100} height={100} alt='' />
               <a>Sass</a>
-              <a>Experience: 1.5 years</a>
+              <a>Experience: 2.5 years</a>
             </C.Skill>
             <C.Skill>
               <Image src={bannerfg} width={100} height={100} alt='' />
@@ -97,22 +97,22 @@ export function Skills() {
             <C.Skill>
               <Image src={bannerND} width={100} height={100} alt='' />
               <a>Node</a>
-              <a>Experience: 7 months</a>
+              <a>Experience: 3 years</a>
             </C.Skill>
             <C.Skill>
               <Image src={bannerSC} width={100} height={100} alt='' />
               <a>Styled Components</a>
-              <a>Experience: 6 months</a>
+              <a>Experience: 2 years</a>
             </C.Skill>
             <C.Skill>
               <Image src={bannerNT} width={100} height={100} alt='' />
               <a>Next</a>
-              <a>Experience: 6 months</a>
+              <a>Experience: 2 years</a>
             </C.Skill>
             <C.Skill>
               <Image src={bannerTW} width={100} height={100} alt='' />
               <a>Tailwind</a>
-              <a>Experience: 6 months</a>
+              <a>Experience: 1.5 years</a>
             </C.Skill>
           </C.SkillsContainer>
         </C.HiddenContainer>
